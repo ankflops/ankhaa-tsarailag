@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Recreated Julian Bicycles.com</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div
+      class="items-center justify-end hidden md:flex h-12 w-full bg-dark text-white pr-8 lg:pr-24 xl:pr-48"
+    >
+      <div class="mr-10 text-gray-700 cursor-pointer hover:text-secondary">
+        <svg
+          class="fill-current h-9 w-auto"
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1066.667"
+          height="266.667"
+          viewBox="0 0 800 200"
+        >
+          <path
+            d="M48.3 69.7c-6.5 2.2-13.2 9-18.5 18.5-4.6 8-5.8 12.7-4 15.5 1.6 2.5 6.8 3.3 21.3 3.3 8.2 0 14.9.2 14.9.5s-1.4 2.7-3.1 5.5l-3.1 5H12.4l-3.7 6.3c-2 3.5-3.7 6.7-3.7 7.1 0 .4 13.4.6 29.8.4 33.3-.3 32.7-.2 41-8.2 5.6-5.3 13.2-19.1 13.2-23.8 0-5.8-1.3-6.2-20.2-6.8l-16.9-.5 3.3-5.5 3.3-5.5 22-.3 22-.2 3.7-6.5 3.7-6.5-28.7.1c-22.8 0-29.6.4-32.9 1.6zM111.1 100l-36.2 32H170V68h-22.6l-36.3 32zm35.1 4.2c-.2 7.3-.5 13.4-.7 13.6-.1.1-6.8.1-14.9 0l-14.7-.3 14.8-13.2c8.1-7.2 15-13.2 15.3-13.2.3-.1.3 5.9.2 13.1zM189.7 100l-18.5 32.1 12.5-.3 12.5-.3 11.2-19.2c6.1-10.6 11.4-19.3 11.7-19.3.3 0 1.4 7.8 2.3 17.2.9 9.5 1.9 18.3 2.2 19.5.4 2.3.7 2.3 15.2 2.3h14.7l14.8-25.5 14.9-25.6 13.1.2c7.3 0 13.5.3 13.9.5.3.2-5.4 10.8-12.8 23.6-7.4 12.7-13.9 23.9-14.5 24.9-.9 1.8-.3 1.9 11.3 1.9h12.3l14.9-25.5L336.2 81h21.6l3.6-6.1c2-3.3 3.6-6.2 3.6-6.5 0-.2-22.4-.3-49.7-.2l-49.7.3-11.2 19.3c-6.1 10.7-11.4 19-11.7 18.5-.2-.4-1.3-9.2-2.2-19.6L238.7 68h-30.4l-18.6 32zM358.1 100l-36.2 32H417V68h-22.6l-36.3 32zm35.1 4.2c-.2 7.3-.5 13.4-.7 13.6-.1.1-6.8.1-14.9 0l-14.7-.3 14.8-13.2c8.1-7.2 15-13.2 15.3-13.2.3-.1.4 5.9.2 13.1zM480.9 69.4c-4.7 1.7-9.9 4.9-12.6 7.8-1.9 2-20.3 33-24.7 41.6-1 1.9-1.6 4.9-1.4 7 .5 5.9 1.9 6.2 29.8 6.2h24.6l3.7-6.3c2-3.5 3.7-6.7 3.7-7 0-.4-7.9-.7-17.5-.7s-17.5-.2-17.5-.4 4.7-8.4 10.4-18.2l10.4-17.9 18.4-.3 18.3-.3 3.7-6.4 3.6-6.5h-24.6c-17.6.1-25.7.5-28.3 1.4zM527.9 97.7c-9.5 16.4-17.9 30.8-18.7 32l-1.4 2.3h25l5.9-10.3c5.3-9.1 6.2-10.2 8.9-10.5 3.1-.3 3.2-.1 7.4 10.2l4.3 10.6h12.9c7 0 12.8-.2 12.8-.5s-2.3-5-5-10.5c-3.5-6.9-4.6-10.2-3.8-10.4.7-.2 3.2-.9 5.5-1.5 6.3-1.7 13-8.5 19.5-19.9 6.9-11.9 7.7-14.8 5-18.2l-2-2.5-29.5-.3-29.5-.3-17.3 29.8zM580 82.1c0 .6-1.8 4.2-4 8l-4.1 6.9h-18.8l4.1-7.3c2.3-3.9 4.6-7.5 5.1-7.8 1.7-1.2 17.7-1 17.7.2zM609.1 94.7c-16 27.7-17.4 31.4-13.8 35.1 1.6 1.5 4.5 1.7 29.5 1.7h27.7l5.4-3c6.8-3.7 8.9-6.3 18.5-23.2 4.4-7.6 9.4-16.2 11.3-19.1L691 81h21.1c12.3 0 20.9.4 20.7.9-.1.5-12.7 11.6-27.8 24.6-15.1 13-27.9 24.1-28.4 24.6-.6.5 13.7.9 35 .9h35.9l3.8-7 3.8-6.9-15.7-.3-15.7-.3 25.4-23.4c14-12.9 26.1-24 26.9-24.8 1.2-1.1-7.1-1.3-50.6-1.3h-52.1l-14.4 25-14.4 24.9-11.7.1c-6.5 0-11.8-.2-11.8-.5s6.3-11.3 14-24.6c7.7-13.2 14-24.2 14-24.5 0-.2-5.5-.4-12.2-.4l-12.3.1-15.4 26.6zM780.3 68.7c1.1.3 1.8 1.5 1.8 3.6l.2 3.2.4-3c.3-1.6 1-3.3 1.6-3.7.7-.4-.4-.7-2.3-.7-1.9.1-2.7.3-1.7.6zM787.1 71.7c.1 3.8.1 3.8.9.8l.7-3 1.2 3 1.3 3 1.6-3 1.6-3 .7 3c.6 2.9.7 2.9.8-.8.1-4.3-1.4-4.9-3.1-1.1l-1.2 2.5-1.3-2.5c-1.9-3.7-3.3-3.2-3.2 1.1z"
+          />
+        </svg>
+      </div>
+      <div class="mr-10 text-gray-700 cursor-pointer hover:text-primary">
+        <svg
+          class="fill-current h-4 w-auto"
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1505.333"
+          height="224"
+          viewBox="0 0 1129 168"
+        >
+          <path
+            d="M792 79.9V160l16.3-.2 16.2-.3.5-43.1.5-43.1 49.8 46.9c27.3 25.7 49.9 46.8 50.2 46.8.3 0 .5-35.6.5-79V9h-33l-.2 42.9-.3 42.8-26.5-25c-14.6-13.8-37.2-35.1-50.2-47.4L792-.2v80.1zm122-.4c0 33.3-.3 60.5-.7 60.4-.5 0-23.1-21.1-50.3-46.8l-49.5-46.7-.3 51.3-.2 51.3h-9V26.7l7.8 7.4c19 18.4 91.5 86.4 92.3 86.7.5.2.9-21.5.9-50.7V19h9v60.5zM630.1 79.2c-21.1 43.1-38.6 78.8-38.8 79.5-.4 1 3.3 1.3 17.2 1.3h17.6l8-16.5 8.1-16.5h25.3c19 0 25.5.3 26.2 1.3.5.6 4 8.1 7.8 16.5l6.9 15.2h17.9c10.8 0 17.7-.4 17.5-.9C742.5 155.4 669.4 1 668.9 1c-.3 0-17.8 35.2-38.8 78.2zM697 87c15 31.6 27.4 58.3 27.7 59.3.5 1.6 0 1.8-4.2 1.5l-4.8-.3-7.1-15.5-7.2-15.5-33.5-.3-33.6-.2-7.6 16-7.6 16h-4.7c-3.3 0-4.5-.4-4.1-1.3 2.8-7.3 58.2-118.6 58.8-118 .4.4 13 26.7 27.9 58.3z"
+          />
+          <path
+            d="M653.1 76.6c-8.4 17.4-15.1 31.8-14.8 32 .2.2 13.7.3 30 .2l29.6-.3-14.4-31.4c-7.9-17.2-14.6-31.5-14.8-31.7-.2-.2-7.2 13.8-15.6 31.2zm25.9 20c0 1.1-2.4 1.4-11 1.4-9.2 0-11-.3-11-1.5 0-.9 2.5-6.6 5.6-12.8l5.7-11.2 5.3 11.4c3 6.2 5.4 12 5.4 12.7zM1042.1 23.1c-5.9 12.3-23.3 47.8-38.5 78.8S976 158.6 976 159.1s7.8.9 17.4.9h17.4l8.1-16.5 8-16.5 25.7.2 25.6.3 7.3 16 7.2 16 17.6.3c12.4.2 17.7-.1 17.7-.9 0-1.3-72.9-156-74.1-157.3-.5-.6-5.5 8.6-11.8 21.5zm40.4 65.9c15.1 32 27.5 58.4 27.5 58.6 0 .2-2.2.4-4.8.4h-4.8l-7.1-15.8-7.1-15.7-33.6-.3-33.6-.2-7.7 16-7.6 16h-9.6l15.1-30.8c8.3-16.9 21.5-44 29.5-60.2 11.1-22.7 14.6-29.1 15.4-27.9.5.9 13.3 27.9 28.4 59.9z"
+          />
+          <path
+            d="M1051.1 48.7c-5.2 10.2-28.1 58.6-28.1 59.4 0 .5 13.1.9 29.5.9 16.2 0 29.5-.4 29.5-.8 0-.5-5.7-13.2-12.6-28.3-6.9-15.1-13.4-29.2-14.4-31.4l-1.7-4-2.2 4.2zm7.7 36.1c2.9 6.4 5.2 12 5.2 12.4 0 .5-5.2.8-11.5.8s-11.5-.2-11.5-.5c0-1.1 11.4-24.5 11.9-24.5.3 0 3 5.3 5.9 11.8zM71 58.8c0 57.7 0 57.6-7.9 65.3-10.2 9.9-25.2 9.2-37-1.7l-5.9-5.5-9.6 11.1C5.3 134.1 1 139.5 1 139.9c0 1.5 11.4 11.7 16.1 14.4 11.2 6.6 26.6 9.1 40.8 6.7 16.4-2.7 32.3-14.5 39.5-29.1 6.3-12.9 6.6-15.4 6.6-72.2V9H71v49.8zm20.8 9.9c-.3 47-.3 47.9-2.6 53.3-5 12.2-15.8 22.3-27.9 26-14.8 4.6-33.1 1.5-43.1-7.4-2.7-2.4-2.7-2.7-.2-5.9l2-2.5 5.1 3.4c7.3 4.9 14.5 6.7 24.3 6.2 10.5-.6 17-3.4 23.1-9.9 5.5-5.9 8-11.2 9.4-19.9.6-3.8 1.1-24 1.1-48.8V21h9.1l-.3 47.7zM173 61.3c0 57.5.1 58.1 6.2 70.7 4.2 8.6 15 19.4 23.9 23.7 23.1 11.3 49.7 7.3 67.5-10.2 7.8-7.6 13.3-17.4 15.3-27.3.7-3.4 1.1-23.4 1.1-57.2V9h-32v46.2c0 48-.6 57.2-4 63.9-4.4 8.5-16 13.3-26.4 11-7.2-1.6-13.3-6.1-15.7-11.6-3.2-7.3-3.8-17.2-3.9-64.3V9h-32v52.3zm21 3.7c0 28.7.4 45.7 1.1 49.2 2.5 11.6 8.9 20.2 18.4 24.8 6 2.9 19.7 3.9 27.2 2.1 7-1.7 14.7-7.3 18.8-13.4 6.1-9.2 6.5-12.8 6.5-62.5V21h10.1l-.3 46.2c-.4 41.1-.6 46.9-2.2 51.8-3.8 11.7-12.9 21.9-24.4 27.3-6.4 3.1-7.2 3.2-19.2 3.2s-12.8-.1-19.3-3.2c-13.8-6.6-23.6-19.8-25.7-34.8-.5-3.9-1-25.8-1-48.8V21h10v44zM360.2 84.2l.3 75.3h82l.3-15.7.3-15.8H393V9h-33l.2 75.2zm20.8-3.7V140h50v8h-59V21h9v59.5zM507.2 84.2l.3 75.3 16.3.3 16.2.2V9h-33l.2 75.2zm20.8.3V148h-9V21h9v63.5z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!--Header-->
+    <header>
+      <!--Navbar-->
+      <nav
+        class="relative top-0 flex flex-wrap items-center justify-between bg-white w-full h-20 px-6 z-10 md:bg-opacity-80"
+      >
+        <div class="text-dark cursor-pointer">
+          <a href="">
+            <svg
+              class="fill-current h-6 w-auto"
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1505.333"
+              height="224"
+              viewBox="0 0 1129 168"
+            >
+              <path
+                d="M792 79.9V160l16.3-.2 16.2-.3.5-43.1.5-43.1 49.8 46.9c27.3 25.7 49.9 46.8 50.2 46.8.3 0 .5-35.6.5-79V9h-33l-.2 42.9-.3 42.8-26.5-25c-14.6-13.8-37.2-35.1-50.2-47.4L792-.2v80.1zm122-.4c0 33.3-.3 60.5-.7 60.4-.5 0-23.1-21.1-50.3-46.8l-49.5-46.7-.3 51.3-.2 51.3h-9V26.7l7.8 7.4c19 18.4 91.5 86.4 92.3 86.7.5.2.9-21.5.9-50.7V19h9v60.5zM630.1 79.2c-21.1 43.1-38.6 78.8-38.8 79.5-.4 1 3.3 1.3 17.2 1.3h17.6l8-16.5 8.1-16.5h25.3c19 0 25.5.3 26.2 1.3.5.6 4 8.1 7.8 16.5l6.9 15.2h17.9c10.8 0 17.7-.4 17.5-.9C742.5 155.4 669.4 1 668.9 1c-.3 0-17.8 35.2-38.8 78.2zM697 87c15 31.6 27.4 58.3 27.7 59.3.5 1.6 0 1.8-4.2 1.5l-4.8-.3-7.1-15.5-7.2-15.5-33.5-.3-33.6-.2-7.6 16-7.6 16h-4.7c-3.3 0-4.5-.4-4.1-1.3 2.8-7.3 58.2-118.6 58.8-118 .4.4 13 26.7 27.9 58.3z"
+              />
+              <path
+                d="M653.1 76.6c-8.4 17.4-15.1 31.8-14.8 32 .2.2 13.7.3 30 .2l29.6-.3-14.4-31.4c-7.9-17.2-14.6-31.5-14.8-31.7-.2-.2-7.2 13.8-15.6 31.2zm25.9 20c0 1.1-2.4 1.4-11 1.4-9.2 0-11-.3-11-1.5 0-.9 2.5-6.6 5.6-12.8l5.7-11.2 5.3 11.4c3 6.2 5.4 12 5.4 12.7zM1042.1 23.1c-5.9 12.3-23.3 47.8-38.5 78.8S976 158.6 976 159.1s7.8.9 17.4.9h17.4l8.1-16.5 8-16.5 25.7.2 25.6.3 7.3 16 7.2 16 17.6.3c12.4.2 17.7-.1 17.7-.9 0-1.3-72.9-156-74.1-157.3-.5-.6-5.5 8.6-11.8 21.5zm40.4 65.9c15.1 32 27.5 58.4 27.5 58.6 0 .2-2.2.4-4.8.4h-4.8l-7.1-15.8-7.1-15.7-33.6-.3-33.6-.2-7.7 16-7.6 16h-9.6l15.1-30.8c8.3-16.9 21.5-44 29.5-60.2 11.1-22.7 14.6-29.1 15.4-27.9.5.9 13.3 27.9 28.4 59.9z"
+              />
+              <path
+                d="M1051.1 48.7c-5.2 10.2-28.1 58.6-28.1 59.4 0 .5 13.1.9 29.5.9 16.2 0 29.5-.4 29.5-.8 0-.5-5.7-13.2-12.6-28.3-6.9-15.1-13.4-29.2-14.4-31.4l-1.7-4-2.2 4.2zm7.7 36.1c2.9 6.4 5.2 12 5.2 12.4 0 .5-5.2.8-11.5.8s-11.5-.2-11.5-.5c0-1.1 11.4-24.5 11.9-24.5.3 0 3 5.3 5.9 11.8zM71 58.8c0 57.7 0 57.6-7.9 65.3-10.2 9.9-25.2 9.2-37-1.7l-5.9-5.5-9.6 11.1C5.3 134.1 1 139.5 1 139.9c0 1.5 11.4 11.7 16.1 14.4 11.2 6.6 26.6 9.1 40.8 6.7 16.4-2.7 32.3-14.5 39.5-29.1 6.3-12.9 6.6-15.4 6.6-72.2V9H71v49.8zm20.8 9.9c-.3 47-.3 47.9-2.6 53.3-5 12.2-15.8 22.3-27.9 26-14.8 4.6-33.1 1.5-43.1-7.4-2.7-2.4-2.7-2.7-.2-5.9l2-2.5 5.1 3.4c7.3 4.9 14.5 6.7 24.3 6.2 10.5-.6 17-3.4 23.1-9.9 5.5-5.9 8-11.2 9.4-19.9.6-3.8 1.1-24 1.1-48.8V21h9.1l-.3 47.7zM173 61.3c0 57.5.1 58.1 6.2 70.7 4.2 8.6 15 19.4 23.9 23.7 23.1 11.3 49.7 7.3 67.5-10.2 7.8-7.6 13.3-17.4 15.3-27.3.7-3.4 1.1-23.4 1.1-57.2V9h-32v46.2c0 48-.6 57.2-4 63.9-4.4 8.5-16 13.3-26.4 11-7.2-1.6-13.3-6.1-15.7-11.6-3.2-7.3-3.8-17.2-3.9-64.3V9h-32v52.3zm21 3.7c0 28.7.4 45.7 1.1 49.2 2.5 11.6 8.9 20.2 18.4 24.8 6 2.9 19.7 3.9 27.2 2.1 7-1.7 14.7-7.3 18.8-13.4 6.1-9.2 6.5-12.8 6.5-62.5V21h10.1l-.3 46.2c-.4 41.1-.6 46.9-2.2 51.8-3.8 11.7-12.9 21.9-24.4 27.3-6.4 3.1-7.2 3.2-19.2 3.2s-12.8-.1-19.3-3.2c-13.8-6.6-23.6-19.8-25.7-34.8-.5-3.9-1-25.8-1-48.8V21h10v44zM360.2 84.2l.3 75.3h82l.3-15.7.3-15.8H393V9h-33l.2 75.2zm20.8-3.7V140h50v8h-59V21h9v59.5zM507.2 84.2l.3 75.3 16.3.3 16.2.2V9h-33l.2 75.2zm20.8.3V148h-9V21h9v63.5z"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- Mobile Menu toggle button -->
+        <div class="block md:hidden">
+          <button class="pr-8 hover:text-gray-700" id="nav-toggle">
+            <svg
+              class="fill-current h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Items -->
+        <div
+          id="nav-content"
+          class="hidden font-bold md:flex md:items-center md:w-auto md:text-2xs lg:text-xs"
+        >
+          <ul class="md:flex md:flex-1 font-main">
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 cursor-pointer text-dark hover:text-primary transition-colors duration-700 ease-out lg:px-6"
+                >Bikes</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 cursor-pointer text-dark hover:text-primary transition-colors duration-700 ease-out lg:px-6"
+                >Demo</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 cursor-pointer text-dark hover:text-primary transition-colors duration-700 ease-out lg:px-6"
+                >Riders</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 cursor-pointer text-dark hover:text-primary transition-colors duration-700 ease-out lg:px-6"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 cursor-pointer text-dark hover:text-primary transition-colors duration-700 ease-out lg:px-6"
+                >What We Do</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Main navigation right icons -->
+        <div class="hidden md:flex items-center justify-between">
+          <div
+            class="mx-4 text-dark hover:text-primary cursor-pointer transition-colors duration-700 ease-out"
+          >
+            <svg
+              class="fill-current h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-dark hover:text-primary cursor-pointer transition-colors duration-700 ease-out"
+          >
+            <svg
+              class="fill-current h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div class="site-hero relative md:-mt-20 z-0">
+        <div class="site-hero_img">
+          <picture>
+            <source
+              media="(min-width: 400px) and (orientation: landscape)"
+              srcset="img/logos/jib_web_home_hero.jpg"
+            />
+            <source
+              media="(min-width: 400px) and (orientation: portrait)"
+              srcset="img/logos/jib_mobile_home_hero.jpg"
+            />
+            <img src="img/logos/jib_web_home_hero.jpg" alt="Juliana bycycles" />
+          </picture>
+        </div>
+        <div
+          class="site-hero__text-container absolute top-1/2 pl-8 transform -translate-y-1/2 md:mt-10 flex flex-col items-start lg:items-end lg:w-full lg:pr-10"
+        >
+          <h1
+            class="site-hero__title font-bold text-yellow-100 text-left text-4xl w-4/5 mb-6 leading-none sm:w-3/5 lg:text-right lg:w-2/5"
+          >
+            The Original Men's Mountain Bike
+          </h1>
+          <div class="site-hero__button">
+            <a
+              href=""
+              class="btn-primary bg-primary px-6 py-2 text-white text-sm font-bold font-main"
+              >See the Bikes</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Product section -->
+    <section class="product-section">
+      <!-- Product section-vertical -->
+      <div class="wrapper">
+        <div class="product-section-vertical">
+          <div class="section-title">
+            <span>Explore our lineup</span>
+          </div>
+          <div class="product-section-vertical__tabs">
+            <ul class="flex font-main">
+              <li
+                class="product-section-vertical__item product-section-vertical--first-item product-section-vertical--active-item"
+              >
+                <div class="product-section-vertical__item-title">Furtado</div>
+              </li>
+              <li class="product-section-vertical__item">
+                <div class="product-section-vertical__item-title">Joplin</div>
+              </li>
+              <li class="product-section-vertical__item">
+                <div class="product-section-vertical__item-title">Maverick</div>
+              </li>
+              <li class="product-section-vertical__item">
+                <div class="product-section-vertical__item-title">Roubion</div>
+              </li>
+              <li
+                class="product-section-vertical__item product-section-vertical--last-item"
+              >
+                <div class="product-section-vertical__item-title">Quincy</div>
+              </li>
+            </ul>
+          </div>
+          <div class="product-section-vertical__imageWrapper">
+            <img src="/dist/img/logos/bike1.webp" alt="" />
+          </div>
+          <div class="product-section-vertical__product-name">
+            Furtado
+            <span class="product-section-vertical__product-tag">New</span>
+          </div>
+          <div class="product-section-vertical__product-description pb-4">
+            Meet the one bike to rule them all. Meet the new Furtado.
+          </div>
+          <div class="product-section-vertical__buttons-wrapper flex">
+            <div class="product-section-vertical__primary-btn">
+              <a href="#" class="btn btn--orange">More Info</a>
+            </div>
+            <div>
+              <a href="#" class="btn btn--white">All bikes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product-section-horizontal -->
+      <div class="product-section--horizontal hidden lg:block">
+        <div class="wrapper">
+          <div class="section-title">
+            <span>Explore our lineup</span>
+          </div>
+
+          <div class="product-section-horizontal__dataWrapper flex w-full">
+            <div class="product-section-horizontal__imageWrapper w-8/12 mt-6">
+              <img src="/dist/img/logos/bike1.webp" alt="" class="w-full" />
+            </div>
+            <div class="product-section-horizontal__textWrapper w-4/12 px-6">
+              <div class="product-section-horizontal__tabs w-full mx-0">
+                <ul class="flex flex-col font-main">
+                  <li
+                    class="product-section-horizontal__item product-section-horizontal--inactive-item"
+                  >
+                    <div class="up-down-buttons">
+                      <a href="#" class="move-up">
+                        <i class="fa-2xl fa-chevron-up"></i>
+                      </a>
+                      <a href="#" class="move-down">
+                        <i class="fa-2xl fa-chevron-down"></i>
+                      </a>
+                    </div>
+                    <div
+                      class="product-section-horizontal__item-title pb-1 text-lg font-extrabold text-black"
+                    >
+                      Furtado
+                      <span class="product-section-horizontal__product-tag">
+                        New
+                      </span>
+                    </div>
+                    <div
+                      class="product-section-horizontal__product-description"
+                    >
+                      Meet the one bike to rule them all. Meet the new Furtado.
+                    </div>
+                    <div
+                      class="product-section-horizontal__buttons-wrapper flex"
+                    >
+                      <div class="product-section-horizontal__primary-btn">
+                        <a href="#" class="btn btn--orange">More Info</a>
+                      </div>
+                      <div class="product-section-horizontal__secondary-btn">
+                        <a href="#" class="btn btn--white">All bikes</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="product-section-horizontal__item product-section-horizontal--active-item"
+                  >
+                    <div class="up-down-buttons">
+                      <a href="#" class="move-up">
+                        <i class="fas fa-chevron-up"></i>
+                      </a>
+                      <a href="#" class="move-down">
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                    </div>
+                    <div class="product-section-horizontal__item-title">
+                      Joplin
+                    </div>
+                    <div
+                      class="product-section-horizontal__product-description pb-4"
+                    >
+                      A little bit (cross) country. A little bit rock and roll.
+                    </div>
+                    <div
+                      class="product-section-horizontal__buttons-wrapper flex"
+                    >
+                      <div class="product-section-horizontal__primary-btn">
+                        <a href="#" class="btn btn--orange">More Info</a>
+                      </div>
+                      <div class="product-section-horizontal__secondary-btn">
+                        <a href="#" class="btn btn--white">All bikes</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="product-section-horizontal__item product-section-horizontal--inactive-item"
+                  >
+                    <div class="up-down-buttons">
+                      <a href="#" class="move-up">
+                        <i class="fas fa-chevron-up"></i>
+                      </a>
+                      <a href="#" class="move-down">
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                    </div>
+                    <div class="product-section-horizontal__item-title">
+                      Maverick
+                    </div>
+                    <div
+                      class="product-section-horizontal__product-description pb-4"
+                    >
+                      You can't define the Maverick in just one line.
+                    </div>
+                    <div
+                      class="product-section-horizontal__buttons-wrapper flex"
+                    >
+                      <div class="product-section-horizontal__primary-btn">
+                        <a href="#" class="btn btn--orange">More Info</a>
+                      </div>
+                      <div class="product-section-horizontal__secondary-btn">
+                        <a href="#" class="btn btn--white">All bikes</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="product-section-horizontal__item product-section-horizontal--inactive-item"
+                  >
+                    <div class="up-down-buttons">
+                      <a href="#" class="move-up">
+                        <i class="fas fa-chevron-up"></i>
+                      </a>
+                      <a href="#" class="move-down">
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                    </div>
+                    <div class="product-section-horizontal__item-title">
+                      Roubion
+                    </div>
+                    <div
+                      class="product-section-horizontal__product-description pb-4"
+                    >
+                      Ready to rally the world.
+                    </div>
+                    <div
+                      class="product-section-horizontal__buttons-wrapper flex"
+                    >
+                      <div class="product-section-horizontal__primary-btn">
+                        <a href="#" class="btn btn--orange">More Info</a>
+                      </div>
+                      <div class="product-section-horizontal__secondary-btn">
+                        <a href="#" class="btn btn--white">All bikes</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="product-section-horizontal__item product-section-horizontal--inactive-item"
+                  >
+                    <div class="up-down-buttons">
+                      <a href="#" class="move-up">
+                        <i class="fas fa-chevron-up"></i>
+                      </a>
+                      <a href="#" class="move-down">
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                    </div>
+                    <div class="product-section-horizontal__item-title">
+                      Quincy
+                    </div>
+                    <div
+                      class="product-section-horizontal__product-description pb-4"
+                    >
+                      The bike to get lost - and found - on.
+                    </div>
+                    <div
+                      class="product-section-horizontal__buttons-wrapper flex"
+                    >
+                      <div class="product-section-horizontal__primary-btn">
+                        <a href="#" class="btn btn--orange">More Info</a>
+                      </div>
+                      <div class="product-section-horizontal__secondary-btn">
+                        <a href="#" class="btn btn--white">All bikes</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- News and Updates section -->
+    <section class="new-section">
+      <div class="wrapper">
+        <div class="section-title">
+          <span>News & Updates</span>
+        </div>
+        <div class="news-section__cards">
+          <div class="news-section__featured-card">
+            <div class="news-section__featured-card-imageWrapper">
+              <img src="img/logos/img1.jpg" alt="" />
+              <div class="news-section__featured-card-title xl:text-2xl">
+                Lockdown (and life) Lessons
+              </div>
+              <a href="#" class="read-more xl:text-2xl">Read more</a>
+            </div>
+          </div>
+          <div class="news-section__news-cards">
+            <div class="news-section__news-card">
+              <div class="news-section__news-card-imageWrapper">
+                <img src="img/logos/img2.jpg" alt="" />
+              </div>
+              <div class="news-section__news-card-text">
+                <div class="news-section__news-card-category card-category">
+                  Stories / Ambassadors
+                </div>
+                <div class="news-section__news-card-title card-title">
+                  Imposter Syndmore and Battling the 'No'
+                </div>
+                <a href="#" class="read-more hidden md:block">Read more</a>
+              </div>
+            </div>
+            <div class="news-section__news-card">
+              <div class="news-section__news-card-imageWrapper">
+                <img src="img/logos/img3.jpg" alt="" />
+              </div>
+              <div class="news-section__news-card-text">
+                <div class="news-section__news-card-category card-category">
+                  Racing
+                </div>
+                <div class="news-section__news-card-title card-title">
+                  Father's Day with Juliana
+                </div>
+                <a href="#" class="read-more hidden md:block">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-section__load-more-btn mt-10 text-center mb-10">
+        <a href="#" class="btn btn--white 3/5 md:hidden">Load More</a>
+      </div>
+    </section>
+
+    <!-- About us section -->
+    <section class="media-panels">
+      <div class="media-panel media-panel--text-first">
+        <div class="media-panel__image-wrapper">
+          <img
+            class="media-panel__image"
+            src="/dist/img/logos/mtb3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="media-panel__text-wrapper">
+          <div class="media-panel__inner-text">
+            <h1 class="media-panel__title">All the Latest</h1>
+            <p class="media-panel__desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              sunt, ut nulla sequi esse fugiat!
+            </p>
+            <a href="" class="btn btn--orange">See What's New</a>
+          </div>
+        </div>
+      </div>
+      <div class="media-panel media-panel--full-image media-panel--text-first">
+        <div class="media-panel__image-wrapper">
+          <img
+            class="media-panel__image"
+            src="/dist/img/logos/mtb2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="media-panel__text-wrapper">
+          <div class="media-panel__inner-text">
+            <h1 class="media-panel__title">What We Do</h1>
+            <p class="media-panel__desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              sunt, ut nulla sequi esse fugiat!
+            </p>
+            <a href="" class="btn btn--orange">See What's New</a>
+          </div>
+        </div>
+      </div>
+      <div class="media-panel media-panel--text-first">
+        <div class="media-panel__image-wrapper">
+          <img
+            class="media-panel__image"
+            src="/dist/img/logos/mtb1.webp"
+            alt=""
+          />
+        </div>
+        <div class="media-panel__text-wrapper">
+          <div class="media-panel__inner-text">
+            <h1 class="media-panel__title">Our Lifetime Warranty</h1>
+            <p class="media-panel__desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              sunt, ut nulla sequi esse fugiat!
+            </p>
+            <a href="" class="btn btn--orange">See What's New</a>
+          </div>
+        </div>
+      </div>
+      <div class="media-panel media-panel--text-last">
+        <div class="media-panel__image-wrapper">
+          <img
+            class="media-panel__image"
+            src="/dist/img/logos/mtb4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="media-panel__text-wrapper">
+          <div class="media-panel__inner-text">
+            <h1 class="media-panel__title">Find a Shop</h1>
+            <p class="media-panel__desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              sunt, ut nulla sequi esse fugiat!
+            </p>
+            <a href="" class="btn btn--orange">See What's New</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Share media section -->
+    <section class="share-media">
+      <div class="wrapper">
+        <div class="share-media__columns">
+          <div class="share-media__column">
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news1.avif"
+                alt=""
+              />
+
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news2.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news12.avif"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+          </div>
+          <div class="share-media__column">
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news4.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news8.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news6.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+          </div>
+          <div class="share-media-column">
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news7.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news9.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news10.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+          </div>
+          <div class="share-media-column">
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news5.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news11.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+            <div class="share-media__item">
+              <div class="share-media__item-overlay"></div>
+              <img
+                class="share-media__item-image"
+                src="/dist/img/logos/news3.jpg"
+                alt=""
+              />
+              <p class="share-media__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                expedita nostrum explicabo aut. Voluptatum laborum vitae
+                possimus ipsam animi ad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-menus">
+          <div class="footer-menu__wrapper">
+            <span class="footer-menu__title">Company</span>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#">About us</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">What We Do</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Careers</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Cookie Policy</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__wrapper">
+            <span class="footer-menu__title">Technology</span>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#">Lifetime Guarantee</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Carbon Expertise</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">VVP Technology</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Our Components</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__wrapper">
+            <span class="footer-menu__title">Support</span>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#">Bike Registration</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Warranty & Replacements</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Shop Parts & Tools</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Tech Support</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">BWebstore Returns</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__wrapper">
+            <span class="footer-menu__title">Experience</span>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#">Find a Retailer</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Factory Demo</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Ride Outs</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#">Shop Juliana</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div
+        class="bottom-bar flex items-center justify-between w-full bg-dark text-white py-2 px-8 lg:px-24 xl:px-48"
+      >
+        <div
+          class="bottom-bar__left hidden text-primary cursor-pointer md:block"
+        >
+          <svg
+            class="fill-current h-5 w-auto"
+            id="juliana-logo-simple"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1505.333"
+            height="224"
+            viewBox="0 0 1129 168"
+          >
+            <path
+              d="M792 79.9V160l16.3-.2 16.2-.3.5-43.1.5-43.1 49.8 46.9c27.3 25.7 49.9 46.8 50.2 46.8.3 0 .5-35.6.5-79V9h-33l-.2 42.9-.3 42.8-26.5-25c-14.6-13.8-37.2-35.1-50.2-47.4L792-.2v80.1zm122-.4c0 33.3-.3 60.5-.7 60.4-.5 0-23.1-21.1-50.3-46.8l-49.5-46.7-.3 51.3-.2 51.3h-9V26.7l7.8 7.4c19 18.4 91.5 86.4 92.3 86.7.5.2.9-21.5.9-50.7V19h9v60.5zM630.1 79.2c-21.1 43.1-38.6 78.8-38.8 79.5-.4 1 3.3 1.3 17.2 1.3h17.6l8-16.5 8.1-16.5h25.3c19 0 25.5.3 26.2 1.3.5.6 4 8.1 7.8 16.5l6.9 15.2h17.9c10.8 0 17.7-.4 17.5-.9C742.5 155.4 669.4 1 668.9 1c-.3 0-17.8 35.2-38.8 78.2zM697 87c15 31.6 27.4 58.3 27.7 59.3.5 1.6 0 1.8-4.2 1.5l-4.8-.3-7.1-15.5-7.2-15.5-33.5-.3-33.6-.2-7.6 16-7.6 16h-4.7c-3.3 0-4.5-.4-4.1-1.3 2.8-7.3 58.2-118.6 58.8-118 .4.4 13 26.7 27.9 58.3z"
+            />
+            <path
+              d="M653.1 76.6c-8.4 17.4-15.1 31.8-14.8 32 .2.2 13.7.3 30 .2l29.6-.3-14.4-31.4c-7.9-17.2-14.6-31.5-14.8-31.7-.2-.2-7.2 13.8-15.6 31.2zm25.9 20c0 1.1-2.4 1.4-11 1.4-9.2 0-11-.3-11-1.5 0-.9 2.5-6.6 5.6-12.8l5.7-11.2 5.3 11.4c3 6.2 5.4 12 5.4 12.7zM1042.1 23.1c-5.9 12.3-23.3 47.8-38.5 78.8S976 158.6 976 159.1s7.8.9 17.4.9h17.4l8.1-16.5 8-16.5 25.7.2 25.6.3 7.3 16 7.2 16 17.6.3c12.4.2 17.7-.1 17.7-.9 0-1.3-72.9-156-74.1-157.3-.5-.6-5.5 8.6-11.8 21.5zm40.4 65.9c15.1 32 27.5 58.4 27.5 58.6 0 .2-2.2.4-4.8.4h-4.8l-7.1-15.8-7.1-15.7-33.6-.3-33.6-.2-7.7 16-7.6 16h-9.6l15.1-30.8c8.3-16.9 21.5-44 29.5-60.2 11.1-22.7 14.6-29.1 15.4-27.9.5.9 13.3 27.9 28.4 59.9z"
+            />
+            <path
+              d="M1051.1 48.7c-5.2 10.2-28.1 58.6-28.1 59.4 0 .5 13.1.9 29.5.9 16.2 0 29.5-.4 29.5-.8 0-.5-5.7-13.2-12.6-28.3-6.9-15.1-13.4-29.2-14.4-31.4l-1.7-4-2.2 4.2zm7.7 36.1c2.9 6.4 5.2 12 5.2 12.4 0 .5-5.2.8-11.5.8s-11.5-.2-11.5-.5c0-1.1 11.4-24.5 11.9-24.5.3 0 3 5.3 5.9 11.8zM71 58.8c0 57.7 0 57.6-7.9 65.3-10.2 9.9-25.2 9.2-37-1.7l-5.9-5.5-9.6 11.1C5.3 134.1 1 139.5 1 139.9c0 1.5 11.4 11.7 16.1 14.4 11.2 6.6 26.6 9.1 40.8 6.7 16.4-2.7 32.3-14.5 39.5-29.1 6.3-12.9 6.6-15.4 6.6-72.2V9H71v49.8zm20.8 9.9c-.3 47-.3 47.9-2.6 53.3-5 12.2-15.8 22.3-27.9 26-14.8 4.6-33.1 1.5-43.1-7.4-2.7-2.4-2.7-2.7-.2-5.9l2-2.5 5.1 3.4c7.3 4.9 14.5 6.7 24.3 6.2 10.5-.6 17-3.4 23.1-9.9 5.5-5.9 8-11.2 9.4-19.9.6-3.8 1.1-24 1.1-48.8V21h9.1l-.3 47.7zM173 61.3c0 57.5.1 58.1 6.2 70.7 4.2 8.6 15 19.4 23.9 23.7 23.1 11.3 49.7 7.3 67.5-10.2 7.8-7.6 13.3-17.4 15.3-27.3.7-3.4 1.1-23.4 1.1-57.2V9h-32v46.2c0 48-.6 57.2-4 63.9-4.4 8.5-16 13.3-26.4 11-7.2-1.6-13.3-6.1-15.7-11.6-3.2-7.3-3.8-17.2-3.9-64.3V9h-32v52.3zm21 3.7c0 28.7.4 45.7 1.1 49.2 2.5 11.6 8.9 20.2 18.4 24.8 6 2.9 19.7 3.9 27.2 2.1 7-1.7 14.7-7.3 18.8-13.4 6.1-9.2 6.5-12.8 6.5-62.5V21h10.1l-.3 46.2c-.4 41.1-.6 46.9-2.2 51.8-3.8 11.7-12.9 21.9-24.4 27.3-6.4 3.1-7.2 3.2-19.2 3.2s-12.8-.1-19.3-3.2c-13.8-6.6-23.6-19.8-25.7-34.8-.5-3.9-1-25.8-1-48.8V21h10v44zM360.2 84.2l.3 75.3h82l.3-15.7.3-15.8H393V9h-33l.2 75.2zm20.8-3.7V140h50v8h-59V21h9v59.5zM507.2 84.2l.3 75.3 16.3.3 16.2.2V9h-33l.2 75.2zm20.8.3V148h-9V21h9v63.5z"
+            />
+          </svg>
+        </div>
+        <div
+          class="bottom-bar__right flex flex-col w-full items-center justify-center md:flex-row md:justify-end"
+        >
+          <div
+            class="bottom-bar__icons-wrapper w-full flex justify-evenly mx-3 my-2 md:justify-end"
+          >
+            <a class="bottom-bar__icon mx-2" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="bottom-bar__icon mx-2" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="bottom-bar__icon mx-2" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="bottom-bar__icon mx-2" href="#">
+              <i class="fa-brands fa-vimeo-v"></i>
+            </a>
+            <a class="bottom-bar__icon mx-2" href="#">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+          <div
+            class="bottom-bar__language-selector flex items-center justify-between w-full bg-white p-1 my-2 mx-4 md:w-1/2"
+          >
+            <div class="bottom-bar__language-selector-flag flex">
+              <div class="bottom-bar__language-selector-item mr-2">
+                <img
+                  src="/dist/img/logos/us-flag.png"
+                  class="h-4 w-auto"
+                  alt=""
+                />
+              </div>
+              <div
+                class="bottom-bar__language-selector-item text-black text-xs"
+              >
+                United States
+              </div>
+            </div>
+            <div class="bottom-bar__language-selector-item">
+              <i class="fa-solid fa-sort-down text-black"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
